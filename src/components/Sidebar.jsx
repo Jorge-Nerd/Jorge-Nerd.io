@@ -26,7 +26,7 @@ const Sidebar = ({selectedCategory, setSelectedCategory}) => {
                 key={categorie.name}
             >
                 <span style={{color: categorie.name===selectedCategory?'#FFF':'red'}}>{categorie.icon}</span>
-                <span style={{opacity: categorie.name===selectedCategory?'1': '0.5', marginLeft:'15px'}}>{categorie.name}</span>
+                <span style={{opacity: categorie.name===selectedCategory?'1': '0.6', marginLeft:'15px'}}>{categorie.name}</span>
             </button>
         ))}
     </Stack>
