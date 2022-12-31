@@ -22,7 +22,7 @@ const Feed = () => {
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "10px solid #3d3d3d",
+          borderRight: "2px solid #3d3d3d",
           px: { sx: 0, md: 2 },
         }}
       >
@@ -30,7 +30,7 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Typography variant="body2" sx={{ mt: 1.5, color: "#fff" }}>
+        <Typography variant="body2" sx={{ mt: 1.5, color: "#fff", fontSize:'0.7rem', fontWeight:'bold' }}>
           Copyright 2023 Jailson Sanches Happy New Year ✨🎆
         </Typography>
       </Box>
