@@ -52,6 +52,11 @@ a {
   width:350px;
 }
 
+.card-video:hover{
+  transform: scale(1.1);
+  transition: 0.15s ;
+  animation-delay: 0.5s;
+}
 .category-btn{
   font-weight: bold !important;
   text-transform: capitalize;
