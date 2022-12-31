@@ -2,7 +2,8 @@ import { useState, useEffect } from "@mui/material";
 
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
-import {Sidebar, Videos} from "../components";
+import Sidebar from "./Sidebar";
+import Videos from "./Videos";
 
 
 const Feed = () => {
