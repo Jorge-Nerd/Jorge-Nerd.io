@@ -31,7 +31,7 @@ const Feed = () => {
           setSelectedCategory={setSelectedCategory}
         />
         <Typography variant="body2" sx={{ mt: 1.5, color: "#fff" }}>
-          Copyright 2023 Jailson Sanches Happy new Year ✨🎆
+          Copyright 2023 Jailson Sanches Happy New Year ✨🎆
         </Typography>
       </Box>
       <Box p={2} sx={{ overflow: "auto", height: "9vh", flex: 2 }}>
