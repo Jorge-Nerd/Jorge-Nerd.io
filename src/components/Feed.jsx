@@ -8,57 +8,55 @@ import Videos from "./Videos";
 import { fetchAPI } from "../utils/fetchAPI";
 import { categories } from "../utils/constance";
 
-
 const Feed = () => {
+  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [videos, setVideos] = useState([]);
 
-  const[selectedCategory, setSelectedCategory]=useState('New')
+  useEffect(() => {
+    fetchAPI(`search?part=snippet&q=${selectedCategory}`).then((data) =>
+      setVideos(data.items)
+    )
+  }, [selectedCategory]);
 
-  useEffect(()=>{
-    fetchAPI('search?part=snippet&q=${selectedCategory}');
-  },[selectedCategory])
 
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "2px solid #3d3d3d",
+          borderRight: "1px solid #3d3d3d",
           px: { sx: 0, md: 2 },
         }}
       >
-        <Sidebar 
+        <Sidebar
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Typography variant="body2" sx={{ mt: 1.5, color: "#fff", fontSize:'0.7rem', fontWeight:'bold' }}>
-          Copyright 2023 Jailson Sanches Happy New Year ✨🎆
+
+        <Typography
+          className="copyright"
+          variant="body2"
+          sx={{ mt: 1.5, color: "#fff" }}
+        >
+          Copyright © 2022 JSM Media
         </Typography>
       </Box>
-      <Box p={2} sx={{ overflow: "auto", height: "9vh", flex: 2 }}>
+
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
           variant="h4"
           fontWeight="bold"
           mb={2}
-          ml={4}
-          sx={{
-            color: "#fff",
-          }}
+          sx={{ color: "white" }}
         >
-         
-          {selectedCategory}
-          {" "}
-          <span
-            style={{
-              color: "#F31503",
-            }}
-          >
-            videos
-          </span>
+          {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
+
+        <Videos videos={videos} />
       </Box>
-      <Videos />
     </Stack>
   );
 };
 
 export default Feed;
+
