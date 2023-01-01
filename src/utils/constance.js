@@ -12,7 +12,7 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo = 'https://img.freepik.com/free-vector/code-logo-template-gradient-design_23-2148810395.jpg?w=740&t=st=1672548934~exp=1672549534~hmac=2e947163e280a1039a139dcfe216b8c32b533d4c455a240fa50f54f2445da940';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },

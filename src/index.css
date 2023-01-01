@@ -26,7 +26,7 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color: rgba(186, 41, 208) !important;
   color: white !important;
 }
 
@@ -43,7 +43,7 @@ a {
   transition: 0.5s ease-in-out;
 }
 .logo-img:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 
 }
 .search-bar{

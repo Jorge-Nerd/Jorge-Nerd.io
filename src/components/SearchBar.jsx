@@ -24,7 +24,7 @@ const SearchBar = () => {
         value=""
         onChange={() => {}}
       />
-      <IconButton type="submit" sx={{p:'10px', color:'red'}} >
+      <IconButton type="submit" sx={{p:'10px', color:'rgba(186, 41, 208)'}} >
         <Search />
       </IconButton>
     </Paper>

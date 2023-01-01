@@ -11,6 +11,12 @@ const ChannelVideo = ({channelDetail}) => {
     <Box sx={{
       boxShadow:'none',
       borderRadius:'20px',
+      display:'flex',
+      alignItems:'center',
+      justifyContent:'center',
+      width:{xs:'356px', md:'300px'},
+      height:'306px',
+      margin:'auto'
     }}>
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', color:'#fff'}}>
@@ -27,7 +33,11 @@ const ChannelVideo = ({channelDetail}) => {
                     sx={{fontSize:14, color:'gray', ml:'5px'}}
                 />
           </Typography>
-          {channelDetail?.statistic}
+          {channelDetail?.statistics?.subscriberCount && (
+            <Typography>
+              {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} subscribers
+            </Typography>
+          )}
         </CardContent>
       </Link>
     </Box>
