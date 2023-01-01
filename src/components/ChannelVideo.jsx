@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 import {demoProfilePicture} from '../utils/constance';
 
-const ChannelVideo = ({channelDetail}) => {
+const ChannelVideo = ({channelDetail, marginTop}) => {
   return (
     <Box sx={{
       boxShadow:'none',
@@ -16,7 +16,8 @@ const ChannelVideo = ({channelDetail}) => {
       justifyContent:'center',
       width:{xs:'356px', md:'300px'},
       height:'306px',
-      margin:'auto'
+      margin:'auto',
+      marginTop
     }}>
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', color:'#fff'}}>
