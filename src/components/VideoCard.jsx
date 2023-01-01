@@ -62,7 +62,7 @@ const VideoCard = ( { video: { id: { videoId, channelId }, snippet }}) => {
     }
     
   return (
-    <Card className='card-video' sx={{width:{md:'300px', xs:'100%'},
+    <Card className='card-video' sx={{width:{sm:'300px', xs:'100%'},
         boxShadow:'none', borderRadius:0}}>
         <Link to={videoId ?`/video/${videoId}`:demoVideoUrl}>
             <CardMedia 
@@ -71,7 +71,7 @@ const VideoCard = ( { video: { id: { videoId, channelId }, snippet }}) => {
                 sx={{width:358, height:180}}
                 />
         </Link>
-        <CardContent sx={{backgroundColor:'#1e1e1e', height:'106px'}}>
+        <CardContent sx={{backgroundColor:'#1e1e1e', height:'106px', textAlign:'center'}}>
             <Link to={videoId ?`/video/${videoId}`:demoVideoUrl}>
                 <Typography variant='subtitle1' sx={{color:'white', fontWeight:'bold'}}>
                     {snippet?.title.slice(0,55) || demoVideoTitle.slice(0,55)}
