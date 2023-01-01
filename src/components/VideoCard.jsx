@@ -8,7 +8,7 @@ import { CheckCircle } from '@mui/icons-material'
 import {demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl,demoChannelTitle} from '../utils/constance'
 const VideoCard = ( { video: { id: { videoId, channelId }, snippet }}) => {
 
-            const timeRelease = () => {
+    const timeRelease = () => {
                 // Define o horário que você deseja converter
         const timeToConvert = snippet?.publishTime;
 
@@ -37,16 +37,20 @@ const VideoCard = ( { video: { id: { videoId, channelId }, snippet }}) => {
         const daysSinceReleased = Math.floor(timeSinceReleased / millisecondsPerDay);
         const monthSinceReleased = Math.floor(timeSinceReleased / millisecondsPerMonth);
         const yearsSinceReleased = Math.floor(timeSinceReleased / millisecondsPerYear);
+        
         if(minutesSinceRelease < 60){
             return minutesSinceRelease + ' Minutes'
-        } else if(hoursSinceReleased < 24){
+        } else if(hoursSinceReleased < 24)
+        {
             return hoursSinceReleased + ' Hours'
-
-        } else if(daysSinceReleased < 31){
+        } else if(daysSinceReleased < 31)
+        {
             return daysSinceReleased + ' Days'
-        } else if(monthSinceReleased < 12){
+        } else if(monthSinceReleased < 12)
+        {
             return monthSinceReleased + ' Months' 
-        } else if(yearsSinceReleased < 365){
+        } else if(yearsSinceReleased < 365)
+        {
             return yearsSinceReleased + ' Years' 
         }
 
