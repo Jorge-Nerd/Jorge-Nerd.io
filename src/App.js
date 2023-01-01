@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Box sx={{backgroundColor:'#000'}}>
+        <Box sx={{background: "linear-gradient(to right, #212121 , #771a85, #212121) "}}>
           <Navbar />
           <Routes>
             <Route path='/' exact element={<Feed />} />

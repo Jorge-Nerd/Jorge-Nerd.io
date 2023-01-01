@@ -10,10 +10,10 @@ const Navbar = () => {
     <Stack
       direction="row"
       alignItems="center"
-      p={2}
+      p={1}
       sx={{
         position: "sticky",
-        background: "#212121",
+        background: "linear-gradient(to right, #771a85, #212121, #771a85)",
         boxShadow: '0px 5px 5px rgba(239, 239, 240, 0.2) ',
         top: "0",
         justifyContent: "space-between",
