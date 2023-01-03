@@ -38,7 +38,7 @@ const Feed = () => {
           variant="body2"
           sx={{ mt: 1.5, color: "#fff" }}
         >
-          Copyright © 2022 JSM Media
+          Copyright © 2022 Jailson Sanches
         </Typography>
       </Box>
 
