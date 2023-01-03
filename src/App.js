@@ -6,7 +6,7 @@ import {Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from './components
 
 function App() {
   return (
-    <div className="App">
+    
       <BrowserRouter>
         <Box sx={{background: "linear-gradient(to right, #212121 , #771a85, #212121) "}}>
           <Navbar />
@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </Box>
       </BrowserRouter>
-    </div>
+    
   );
 }
 

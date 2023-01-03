@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 import Videos from "./Videos";
 
 import { fetchAPI } from "../utils/fetchAPI";
-import { categories } from "../utils/constance";
+
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
