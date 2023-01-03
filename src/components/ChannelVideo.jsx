@@ -27,9 +27,9 @@ const ChannelVideo = ({channelDetail, marginTop}) => {
           sx={{
             borderRadius:'50%', height:'180px', width:'180px ', border:'1px solid #e3e3e3'
           }} />
-          <Typography variant='h6'>
+          <Typography variant='h6' sx={{textAlign:'center'}}>
             {channelDetail?.snippet?.title} <br />
-            {channelDetail?.snippet?.publishTime}
+            {parseInt(channelDetail?.snippet?.publishTime).toString()}
             <CheckCircle
                     sx={{fontSize:14, color:'gray', ml:'5px'}}
                 />
